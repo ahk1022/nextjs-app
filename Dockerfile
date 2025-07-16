@@ -29,5 +29,5 @@ COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 
 # Start the server
-EXPOSE 3000
+EXPOSE 80
 CMD ["npm", "start"]
